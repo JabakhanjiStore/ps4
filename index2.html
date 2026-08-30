@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jabakhanji Store</title>
+    <link rel="stylesheet" href="includes/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="header-content">
+                <h1 class="main-title">
+                    <img class="brand-logo" src="includes/jabakhanji-store-logo-contrast.png" alt="Jabakhanji Store — delivery all over Lebanon — 71 358 141">
+                    <span>JABAKHANJI STORE</span>
+                </h1>
+                <div class="subtitle">71358141</div>
+                <div class="version-badge">JAILBREAK HOST</div>
+            </div>
+        </header>
+
+        <h3 id="UA">Running on: <span id="firmware-display">PS4</span></h3>
+        <hr>
+
+        <div class="btn-container">
+            <form id="kernel-options">
+                <label>Kernel:</label>
+                <div class="radio-option">
+                    <input type="radio" name="kernel" id="netctrl-exploit" value="netctrl">
+                    <label for="netctrl-exploit">NetCtrl</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="kernel" id="lapse-exploit" value="lapse">
+                    <label for="lapse-exploit">Lapse</label>
+                </div>
+            </form>
+            <button id="jeilbrek">Jailbreak</button>
+            <div class="autoJb">
+                <label for="autoJbInput" id="autoJbLabel">Auto Jailbreak</label>
+                <input class="mt-2" id="autoJbInput" type="checkbox">
+            </div>
+        </div>
+
+        <pre id="console">Ready. Awaiting execution...</pre>
+
+        <footer>
+            <p class="credit">Designed by Ahmad Jabakhanji</p>
+            <p class="thanks">Special thanks to all scene developers</p>
+        </footer>
+    </div>
+
+    <script src="src/main.js"></script>
+    <script src="includes/script.js"></script>
+</body>
+</html>

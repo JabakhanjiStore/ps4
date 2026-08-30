@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.appcache">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jabakhanji Store - Lapse</title>
+    <link rel="stylesheet" href="includes/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="header-content">
+                <h1 class="main-title">
+                    <img class="brand-logo" src="includes/jabakhanji-store-logo-contrast.png" alt="Jabakhanji Store — delivery all over Lebanon — 71 358 141">
+                    <span>JABAKHANJI STORE</span>
+                </h1>
+                <div class="subtitle">71358141</div>
+                <div class="version-badge">LAPSE CHAIN</div>
+            </div>
+        </header>
+
+        <h3 id="UA">Lapse chain</h3>
+        <hr>
+
+        <div class="btn-container">
+            <div id="state" class="loading">Loading Lapse chain...</div>
+            <pre id="out"></pre>
+        </div>
+
+        <footer>
+            <p class="credit">Designed by Ahmad Jabakhanji</p>
+            <p class="thanks">Special thanks to all scene developers</p>
+        </footer>
+
+        <script type="module">
+            import("./chain_lapse.js").catch(function(e) {
+                var stateEl = document.getElementById("state");
+                stateEl.textContent = "Failed to load the Lapse chain.";
+                stateEl.className = "error";
+            });
+        </script>
+    </div>
+</body>
+</html>
